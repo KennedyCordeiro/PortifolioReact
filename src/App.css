@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 /* ************************************************NAVBAR*********************************************** */
-
-.nav{
-  background-color: #1555bd !important;
-  color:#000000 !important;
-}
-
 .img-logo{
   max-height: 60px;
   max-width: 180;
@@ -16,6 +10,7 @@
 .logo{
   width: 260px;
 }
+
 /* ************************************************NAV LINKS*********************************************** */
 
 nav a.nav-link{
@@ -46,7 +41,7 @@ body{
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -57,4 +52,33 @@ body{
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
   border-top: 3px solid var(#150185);
+}
+
+.navbar-nav > li > a {
+  margin-right: 12px;
+}
+
+/* ************************************************HEADER *********************************************** */
+
+.header-wraper {
+  position: relative;
+  background: url('img/1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main-info h1{
+  text-transform: uppercase;
+  color: #ffffff;
 }
