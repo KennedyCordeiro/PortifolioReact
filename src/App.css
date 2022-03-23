@@ -15,6 +15,15 @@
   position: absolute;
 }
 
+@media(max-width: 768px){
+  .navbar-brand{
+    width: 7rem;
+    font-size: 1.5rem !important;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
 /* ************************************************NAV LINKS*********************************************** */
 
 nav a.nav-link{
@@ -45,6 +54,16 @@ body{
 }
 
 
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 3px solid var(#150185);
+}
+
+.navbar-nav > li > a {
+  margin-right: 12px;
+}
+
+/* ************************************************HEADER *********************************************** */
+
 .App-header {
   background-color: #ffffff;
   min-height: 100vh;
@@ -56,16 +75,6 @@ body{
   position: fixed;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 3px solid var(#150185);
-}
-
-.navbar-nav > li > a {
-  margin-right: 12px;
-}
-
-/* ************************************************HEADER *********************************************** */
-
 .header-wraper {
   display: grid;
   background: url('img/1.jpg') no-repeat;
@@ -76,16 +85,28 @@ body{
 
 .main-info{
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
+  z-index: 1;
 }
 
 .main-info h1{
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media(max-width: 768px){
+  .main-info h1{
+    font-size: 1.5rem !important;
+  }
 }
 
 .intro-content {
@@ -102,7 +123,7 @@ body{
 .typed-text{
 	color: #4e0655;
   border: #000000;
-  border-radius: 50;
+  border-radius: 60;
 	font-family: "poppin-bold", sans-serif;
   
 	font-size: 1.3rem;
@@ -112,15 +133,42 @@ body{
 	letter-spacing: .3rem;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
+@media(max-width: 768px){
+  .typed-text{
+    font-size: 0.75rem !important;
+  }
+  .main-info h1{
+    font-size: 1.1rem !important;
+  }
+}
 
 
-/* ************************************************ Botão *********************************************** */
+/* ************************************************ BUTTON MAIN OFFER *********************************************** */
 
   .btn-main-offer {
-    border: 1px solid var(#000000);
+    border: 1px solid;
+    border-color: #070aca;
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 0px;
     padding: 10px 12px 12px 12px;
-    color:#ffffff;
+    color:#f5ebeb;
     margin: 2rem;
+  }
+
+  .btn-main-offer:hover {
+    color:#ffffff !important;
+    text-decoration: none;
+    background-color: #1362bb;    
+    transition: .2s ease-in-out;
+  }
+  a:active {
+    color:#ffffff !important;
+  }
+  
+  a:hover {
+    color:#0f0501 !important;
+  }
+  
+  a:focus {
+    color:#000000 !important;
   }
