@@ -11,6 +11,10 @@
   width: 260px;
 }
 
+.nav{
+  position: absolute;
+}
+
 /* ************************************************NAV LINKS*********************************************** */
 
 nav a.nav-link{
@@ -30,8 +34,9 @@ nav a.nav-link{
 }
 
 body{
-  background-color: #26002e;
+  background-color: #000000;
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight:  bold;
 }
 
 .App-logo {
@@ -48,6 +53,7 @@ body{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  position: fixed;
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
@@ -61,7 +67,7 @@ body{
 /* ************************************************HEADER *********************************************** */
 
 .header-wraper {
-  position: relative;
+  display: grid;
   background: url('img/1.jpg') no-repeat;
   background-size: cover;
   background-position: center;
@@ -72,7 +78,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
@@ -82,3 +87,40 @@ body{
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.intro-content {
+	display: relative;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-transform: translateY(-2.1rem);
+	-ms-transform: translateY(-2.1rem);
+	transform: translateY(-2.1rem);
+}
+
+/* ************************************************ Typed Text *********************************************** */
+
+.typed-text{
+	color: #4e0655;
+  border: #000000;
+  border-radius: 50;
+	font-family: "poppin-bold", sans-serif;
+  
+	font-size: 1.3rem;
+	line-height: 100px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ************************************************ Botão *********************************************** */
+
+  .btn-main-offer {
+    border: 1px solid var(#000000);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 12px 12px 12px;
+    color:#ffffff;
+    margin: 2rem;
+  }
