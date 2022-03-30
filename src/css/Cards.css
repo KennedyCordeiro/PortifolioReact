@@ -1,11 +1,28 @@
-.card  {
-    height: 12rem;
-    width: 30%;
-    top:10px;
-    left: 10px;
-    background-color: white;
+body {
+  background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
 }
 
-.image-card{
-    width: 100%;
+.card {
+  width: 30rem;
+}
+
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253) !important;
+}
+
+.card-body{
+    padding: 3rem 0 !important;
+}
+
+.card-text{
+    font-size: 0.9rem;
+    padding: 0.4rem 1.9rem;
+}
+
+.container-fluid .row{
+    padding-top: 6rem;
+}
+
+.image-card {
+  width: 100%;
 }

@@ -1,14 +1,13 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import code from '../img/code.png'
-import '../css/Cards.css'
+import React from 'react';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import code from './../../img/code.png';
+import './../../css/Cards.css';
 
-const Cards = () => {
+const CardUI = props => {
     return (
         <div className='card text-center'>
             <div className='overflow'>
-                <img src={code} alt='Image 1' className='image-card'/>
-
+                <img src={code} alt='Image 1' className='card-img-top'/>
             </div>
             <div className='card-body text-dark'>
                 <h4 className='card-title'>Web Developer</h4>
@@ -19,4 +18,4 @@ const Cards = () => {
     );
 }
 
-export default Cards;
+export default CardUI;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "./CardUI";
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 class Cards extends Component {
   render() {
@@ -20,3 +21,5 @@ class Cards extends Component {
     );
   }
 }
+
+export default Cards;
