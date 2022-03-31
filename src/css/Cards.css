@@ -1,9 +1,21 @@
 body {
-  background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+  background: radial-gradient(#d9d6d6, rgb(246, 245, 245), #5e5e5e);
 }
 
 .card {
   width: 30rem;
+}
+.btn-card{
+  border: 1px solid;
+  border-color: black;
+  border-radius: 0px;
+  margin-top: 3px;
+}
+.btn-card:hover{
+  background-color: #060000;
+  color:#ffffff !important;
+  border-color: #d9d6d6;
+  border: 1px solid;
 }
 
 .card:hover{

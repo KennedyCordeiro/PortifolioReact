@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "./CardUI";
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class Cards extends Component {
   render() {
@@ -8,13 +8,13 @@ class Cards extends Component {
       <div className="container-fluid d-flex justify-content-center">
         <div className="row">
           <div className="col-md-4">
-            <Card/>
+            <Card />
           </div>
           <div className="col-md-4">
-            <Card/>
+            <Card />
           </div>
           <div className="col-md-4">
-            <Card/>
+            <Card />
           </div>
         </div>
       </div>

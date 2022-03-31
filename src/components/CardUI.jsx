@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import code from './../../img/code.png';
-import './../../css/Cards.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import code from './../img/code.png';
+import './../css/Cards.css'
 
 const CardUI = props => {
     return (
@@ -12,7 +12,7 @@ const CardUI = props => {
             <div className='card-body text-dark'>
                 <h4 className='card-title'>Web Developer</h4>
                 <p className='card-text text-secondary'>Web developer at Fitbank 450 and The Marias Beauty</p>
-                <a href = '#' className='btn-card btn-sucess btn-outline-sucess'>About more</a>
+                <a href = '#' className='btn btn-card btn-outline-sucess'>About more</a>
             </div>
         </div>
     );
