@@ -2,12 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import code from './../img/code.png';
 import './../css/Cards.css'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const CardUI = props => {
     return (
+
         <div className='card text-center'>
             <div className='overflow'>
-                <img src={code} alt='Image 1' className='card-img-top'/>
+                <img src={props.imgsrc} alt='Image 1' className='card-img-top'/>
             </div>
             <div className='card-body text-dark'>
                 <h4 className='card-title'>Web Developer</h4>
