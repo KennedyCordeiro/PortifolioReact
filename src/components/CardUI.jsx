@@ -4,13 +4,6 @@ import './../css/Cards.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const CardUI = props => {
-    // [tags, SetTags] = useState({tags:[]})
-
-    // const handleTag = () => {
-    //     SetTags({})
-    // }
-
-
     return (
 
         <div className='card text-center'>
