@@ -1,6 +1,7 @@
 import React from 'react';
 import Typed from 'react-typed';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/Header.css';
 
 const Header = () => {
     return (

@@ -1,0 +1,56 @@
+.img-logo {
+  max-height: 60px;
+  max-width: 180;
+  margin-left: 30px;
+}
+
+.logo {
+  width: 260px;
+}
+
+.nav {
+  position: absolute;
+}
+
+button.navbar-toggler {
+  transition-duration: 3s;
+}
+
+[anime="center"] {
+  transform: translate3d(0px, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+    font-size: 1.5rem !important;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+/* ************************************************NAV LINKS*********************************************** */
+
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+nav a.nav-link:active {
+  color: rgb(255, 255, 255) !important;
+}
+
+nav a.nav-link:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
+nav a.nav-link:focus {
+    color: rgb(255, 255, 255) !important;
+  }
+  
+#NavItem {
+  margin-right: 80px;
+  margin-left: auto;
+}
