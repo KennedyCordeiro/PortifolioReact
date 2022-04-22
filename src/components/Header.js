@@ -5,9 +5,9 @@ import '../css/Header.css';
 
 const Header = () => {
     return (
-        <div className='header-wraper'>
-                <div className='main-info intro-content'>
-                    <h1>KenTech Technology</h1>
+        <div className='header-wraper '>
+                <div className='main-info intro-content collapse.show'>
+                    <h1 className=''>KenTech Technology</h1>
                     <Typed
                         className='typed-text'
                         strings={["Web development", "Full Stack Developer", "Computer Builder 🚀"]}

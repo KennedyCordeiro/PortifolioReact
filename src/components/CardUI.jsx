@@ -6,7 +6,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 const CardUI = props => {
     return (
 
-        <div className='card text-center'>
+        <div className='card card-main text-center'>
             <div className='overflow'>
                 <img src={props.imgsrc} alt='Image 1' className='card-img-top'/>
             </div>

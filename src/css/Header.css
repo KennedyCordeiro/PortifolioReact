@@ -14,7 +14,7 @@
     background: url('/src/img/1.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
   }
   
   .main-info {
@@ -35,6 +35,8 @@
   .main-info h1{
     text-transform: uppercase;
     color: #ffffff;
+    font-size: 2.4rem;
+    
   }
   
   @media(max-width: 768px){

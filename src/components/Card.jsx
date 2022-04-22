@@ -9,7 +9,7 @@ class Cards extends Component {
     return (
       <div className="container-fluid d-flex justify-content-center card-header">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-4 ">
             <Card imgsrc ={img1} title = 'Computer Builder' />
           </div>
           <div className="col-md-4">
