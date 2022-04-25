@@ -19,7 +19,6 @@ body{
   pointer-events: none;
 }
 
-
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
   border-top: 3px solid var(#150185);
 }
@@ -27,7 +26,6 @@ body{
 .navbar-nav > li > a {
   margin-right: 12px;
 }
-
 
 /* ************************************************ Typed Text *********************************************** */
 
@@ -43,6 +41,7 @@ body{
 	letter-spacing: .3rem;
 	text-shadow: 0 0 6px rgba(117, 117, 117, 0.2);
 }
+
 @media(max-width: 768px){
   .typed-text{
     font-size: 0.75rem !important;
@@ -52,25 +51,48 @@ body{
   }
 }
 
-
 /* ************************************************ BUTTON MAIN OFFER *********************************************** */
 
   .btn-main-offer {
-    /* border: 1px solid; */
-    border-color: #070aca;
+    text-decoration: none;
     text-transform: uppercase;
+    outline: 2px solid #fff;
+    border: 1px solid; 
+    border-color: #ffffff;
     border-radius: 0px;
     padding: 10px 12px 12px 12px;
-    color:#f5ebeb;
+    color:#fff;
     margin: 2rem;
+    transform: color 3s;
   }
 
   .btn-main-offer:hover {
-    color:#ffffff !important;
+    /* color:#ffffff !important;
     text-decoration: none;
-    background-color: #1362bb;    
     transition: .2s ease-in-out;
+  */
+  background-color: #5f0066;
+
+} 
+  
+  .btn-main-offer::before {
+   
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 30%;
+    background-color: #fff;
+    color:#5f0066;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
   }
+
+  .btn-main-offer:hover::before {
+    width: 150%;
+  } 
+  
   a:active {
     color:#ffffff !important;
   }
