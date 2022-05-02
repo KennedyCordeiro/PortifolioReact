@@ -54,53 +54,41 @@ body{
 /* ************************************************ BUTTON MAIN OFFER *********************************************** */
 
   .btn-main-offer {
+    display: inline;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 2px;
     outline: 2px solid #fff;
-    border: 1px solid; 
-    border-color: #ffffff;
-    border-radius: 0px;
     padding: 10px 12px 12px 12px;
     color:#fff;
     margin: 2rem;
-    transform: color 3s;
+    transform: color 2s;
+    overflow: hidden;
+    position: relative;
   }
 
-  .btn-main-offer:hover {
-    /* color:#ffffff !important;
-    text-decoration: none;
-    transition: .2s ease-in-out;
-  */
-  background-color: #5f0066;
-
+  .btn-main-offer:hover{
+  color: #000000;
+  border-color: #000000;
 } 
   
-  .btn-main-offer::before {
-   
+  .btn-main-offer::before{
+    content: '';
+    border-color: #000000;
     position: absolute;
     top: 0;
     left: -50px;
-    width: 0;
-    height: 30%;
+    width: 150%;
+    height: 100%;
     background-color: #fff;
-    color:#5f0066;
-    transform: skewX(35deg);
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
     z-index: -1;
-    transition: width 1s;
+    transition: transform 1s;
   }
 
   .btn-main-offer:hover::before {
-    width: 150%;
+    transform: scaleX(1) skewX(35deg);
   } 
   
-  a:active {
-    color:#ffffff !important;
-  }
   
-  a:hover {
-    color:#0f0501 !important;
-  }
-  
-  a:focus {
-    color:#000000 !important;
-  }

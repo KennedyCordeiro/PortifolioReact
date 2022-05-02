@@ -15,7 +15,7 @@ const Header = () => {
                         backSpeed={70}
                         loop
                     />
-                    <a href= '#' className="btn-main-offer">Contact me</a>
+                    <a href='https://api.whatsapp.com/send?phone=5588994148159&text=Ol%C3%A1%20Kennedy%2C%20pode%20me%20ajudar%3F'className="btn-main-offer">Contact me</a>
                 </div>
             </div>
             
